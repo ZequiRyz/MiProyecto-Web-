@@ -1,0 +1,49 @@
+
+
+*{
+    background-color: grey;
+    box-sizing: border-box;
+    margin : 0;
+    padding: 0;
+}
+
+.contenedor{
+    background-color: blueviolet;
+    overflow: auto;
+}
+
+
+.caja{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: green;
+    float: left;
+}
+
+#caja3{
+
+    clear: left;
+    
+}
+@media (max-width: 768px) {
+    .caja {
+        float: none; /* Quitamos el float para que se apilen */
+        width: 50%; /* Hacemos que ocupen la mitad del contenedor */
+        background-color: skyblue; /* Cambiamos el color para notar el cambio */
+        margin: 5px auto; /* Centramos las cajas */
+    }
+
+    #caja3 {
+        clear: none; /* Ya no es necesario limpiar el float */
+    }
+}
+
+/* Para pantallas de celular o más pequeñas*/
+@media (max-width: 480px) {
+    .caja {
+        width: 90%; /* Hacemos que casi ocupen todo el ancho */
+        background-color: salmon; /* Cambiamos el color de nuevo */
+    }
+
+}

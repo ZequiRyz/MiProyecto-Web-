@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin:0%;
+    padding: 0%;
+}
+
+.encabezado {
+    display: flex;              /* Activa flexbox */
+    justify-content: space-around; /* Espacio uniforme entre cajas */
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.caja {
+    background-color: skyblue;
+    padding: 10px 20px;
+    border: 1px solid #333;
+}
