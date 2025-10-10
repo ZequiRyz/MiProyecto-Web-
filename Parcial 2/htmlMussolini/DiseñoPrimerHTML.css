@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #8E2DE2, #4A00E0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+img {
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  margin-bottom: 15px;
+}
+
+#miBoton {
+  font-size: 1.2em;
+  background: #E6E6FA; 
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  border: none; /* Pequeño extra para quitar el borde feo */
+  cursor: pointer; /* Pequeño extra para que el mouse cambie a una manita */
+   transition: all 0.3s ease; /*Sirve para hacer que tarde 0.3s en dar una respuesta al presionarlo*/
+}
+
+p {
+  font-size: 1.2em;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff; /* Texto blanco para que sea legible */
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+#miBoton:hover {
+  /* Hacemos el botón un poco más grande */
+  transform: scale(1.05);
+  background: #fdfdff;
+  /* Cambiamos la sombra para que parezca que se levanta */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}

@@ -95,3 +95,84 @@ td:first-child {
     position: relative;
     top: -2px; 
 }
+
+
+
+/* --- ESTILOS PARA EL BOTÓN DE MODO OSCURO --- */
+.modo-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #f0e6ff;
+    border: none;
+    border-radius: 50%; /* Círculo perfecto */
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.modo-btn:hover {
+    background-color: #dcd1ed;
+    transform: scale(1.1);
+}
+
+.modo-btn .material-symbols-outlined {
+    color: #4a148c;
+}
+
+.modo-oscuro {
+    background-color: #121212;
+}
+
+.modo-oscuro .table-container {
+    background-color: #1e1e1e;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.modo-oscuro h1 {
+    color: #bb86fc; 
+}
+
+.modo-oscuro td {
+    color: #e0e0e0; /* Gris muy claro, casi blanco */
+}
+
+.modo-oscuro thead th {
+    background-color: #3700b3;
+    color: #ffffff; /* Blanco */
+}
+
+.modo-oscuro tbody tr {
+    border-bottom-color: #333;
+}
+
+.modo-oscuro tbody tr:nth-child(even) {
+    background-color: #2c2c2c;
+}
+
+.modo-oscuro tbody tr:hover {
+    background-color: #3c3c3c;
+}
+
+.modo-oscuro td:first-child {
+    color: #bb86fc;
+}
+
+.modo-oscuro .maestro {
+    color: #b0b0b0; /* Gris claro para el maestro */
+}
+
+.modo-oscuro .salon {
+    color: #a0a0a0; /* Gris un poco más suave */
+}
+
+.modo-oscuro .clase-actual {
+    background-color: #3c2a4f !important; /* Un fondo morado oscuro */
+    border-left: 5px solid #bb86fc; /* Borde lavanda, igual que el título */
+}
+
